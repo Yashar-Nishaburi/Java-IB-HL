@@ -39,17 +39,43 @@ public class PowerRe
 	{
 		if (n == 0)
 		{
-			return;
+			System.out.println("");
 		}
 		else
 		{
-			int g = n % 2;
 			//return g;
 			binry(n/2);
-			System.out.println(g);
+		}
+		System.out.print(n%2);
+	}
+	static void tri(int n)
+	{
+		int k = 0;
+		if (n != 0)
+		{
+			for (int i = 0 ; i < n ; i++)
+			{
+				for (int c = 1 ; c < i+2 ; c++)
+				{
+					System.out.print("*");
+					k++;
+				}
+				System.out.println(" ");
+			}
+			System.out.println(k);
+			System.out.println("---------------");
+			tri(n-1);
+		}
+		else if ( n == 0 )
+		{
+			System.out.println("Don work man");
+		}
+		else
+		{
+			System.out.println("*");
+			System.out.println("1");
 		}
 	}
-	
 	public static void main (String[] args) 
 	{
 		int x = IBIO.inputInt("x:");
@@ -59,6 +85,9 @@ public class PowerRe
 		System.out.println(multi(x,y));
 		System.out.println("=====");
 		binry(n);
+		System.out.println("");
+		System.out.println("=====");
+		tri(n);
 	}
 }
 
