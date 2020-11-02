@@ -24,7 +24,7 @@
 
 public class WrkSht34
 {
-	static void ex1 ()
+	static void ex1 () //exercise 3.1
 	{
 		int x;
 		do
@@ -33,8 +33,8 @@ public class WrkSht34
 		} while (x >= 100 || x < 0 );
 		System.out.println("thank you");
 	}
-	
-	static void ex2 ()
+//=============================================================================================
+	static void ex2 () //exercise 3.2
 	{
 		int i = 1;
 		int x = IBIO.inputInt("Enter a number: ");
@@ -51,25 +51,56 @@ public class WrkSht34
 			System.out.println("Smallest prime is " + i);
 		}
 	}
-	
-	static void ex3 ()
+//=============================================================================================
+	static void ex3 () //exercise 3.3 
 	{
 		int sum = 0;
 		int n = IBIO.inputInt(" enter a number ");
 		do
 		{ 
 			int digit = n % 10; // get right most digit
+			digit = digit * digit * digit;
 			sum = sum + digit; // add to units digits
 			n = n / 10; // make new number
 		} while ( n != 0);
 		System.out.println("the sum of the digits of the number is " + sum);
 	}
-
-
+//=============================================================================================
+	static void ex4 () //exercise 3.4
+	{
+		int c = 0;
+		int n = IBIO.inputInt(" enter starting number ");
+		do 
+		{
+			System.out.println( n + ", " );
+			if ( n % 2 == 0 )
+			{
+				n = n / 2;
+			}
+			else
+			{
+				n = (n*3)+1;
+			}
+		}while ( n != 1 );
+		System.out.println("1");
+	}
+//=============================================================================================
+	static void ex5 () //exersice 4.1
+	{
+		int v = IBIO.inputInt(" enter first number ");
+		int b = IBIO.inputInt(" enter second number ");
+		int n = IBIO.inputInt(" Press [1] for multi or [2] for add ");
+	}
+//=============================================================================================
+//=============================================================================================
+//=============================================================================================
 	public static void main (String[] args) 
 	{
 		ex1();
 		ex2();
+		ex3();
+		ex4();
+		ex5();
 	}
 }
 
