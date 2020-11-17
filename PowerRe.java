@@ -16,8 +16,10 @@ public class PowerRe
 		}
 		else if (y<0)
 		{
-			c = (x * power(x,y+1));
-			return (1.0/c);
+			return (x* power(x,y+1));
+			//c = (x * power(x,y+1));
+			//System.out.println(c);
+			//return (1.0/c);
 		}
 		else
 		{	
@@ -83,7 +85,7 @@ public class PowerRe
 		int n = IBIO.inputInt("n:");
 		System.out.println(power(x,y));
 		System.out.println(multi(x,y));
-		System.out.println("=====");
+		System.out.println("==faggot===");
 		binry(n);
 		System.out.println("");
 		System.out.println("=====");
