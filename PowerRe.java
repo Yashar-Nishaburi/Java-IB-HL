@@ -85,7 +85,7 @@ public class PowerRe
 		int n = IBIO.inputInt("n:");
 		System.out.println(power(x,y));
 		System.out.println(multi(x,y));
-		System.out.println("==faggot===");
+		System.out.println("=====");
 		binry(n);
 		System.out.println("");
 		System.out.println("=====");
